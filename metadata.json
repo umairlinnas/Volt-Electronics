@@ -1,0 +1,6 @@
+{
+  "name": "Volt Electronics",
+  "description": "Sri Lanka's Premier Electronics, Mobiles & Home Appliances Store with real-time inventory management, instant checkout, and order tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

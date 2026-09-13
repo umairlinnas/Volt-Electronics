@@ -1,0 +1,81 @@
+{
+  "entities": {
+    "products": {
+      "title": "Products",
+      "description": "Electronics, mobile phones, laptops, and home appliances catalog",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "brand": { "type": "string" },
+        "model": { "type": "string" },
+        "sku": { "type": "string" },
+        "price": { "type": "number" },
+        "originalPrice": { "type": "number" },
+        "stock": { "type": "number" },
+        "category": { "type": "string" },
+        "subcategory": { "type": "string" },
+        "condition": { "type": "string" },
+        "warranty": { "type": "string" },
+        "warrantyType": { "type": "string" },
+        "isFeatured": { "type": "boolean" },
+        "isDealOfDay": { "type": "boolean" },
+        "isFlashSale": { "type": "boolean" },
+        "rating": { "type": "number" },
+        "reviewsCount": { "type": "number" }
+      },
+      "required": ["id", "title", "brand", "price", "stock", "category"]
+    },
+    "orders": {
+      "title": "Orders",
+      "description": "Customer purchase orders with islandwide Sri Lanka tracking and courier waybills",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "orderNumber": { "type": "string" },
+        "userId": { "type": "string" },
+        "total": { "type": "number" },
+        "subtotal": { "type": "number" },
+        "shippingFee": { "type": "number" },
+        "currency": { "type": "string" },
+        "status": { "type": "string" },
+        "paymentMethod": { "type": "string" },
+        "paymentStatus": { "type": "string" },
+        "courierName": { "type": "string" },
+        "trackingNumber": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "orderNumber", "total", "status", "paymentMethod"]
+    },
+    "offers": {
+      "title": "Promo Offers",
+      "description": "Seasonal discount vouchers, coupons, and flash deals",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "code": { "type": "string" },
+        "title": { "type": "string" },
+        "discountPercent": { "type": "number" },
+        "minSpendUSD": { "type": "number" },
+        "validUntil": { "type": "string" },
+        "isActive": { "type": "boolean" },
+        "freeShipping": { "type": "boolean" }
+      },
+      "required": ["id", "code", "discountPercent", "isActive"]
+    },
+    "staff": {
+      "title": "Staff Members",
+      "description": "Store operational staff, inventory controllers, and administrators",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "role": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "name", "email", "role", "status"]
+    }
+  }
+}
